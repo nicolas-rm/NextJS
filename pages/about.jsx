@@ -1,36 +1,20 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import { Navbar } from '../components/Navbar';
-import styles from '../styles/Home.module.css';
+import Link from 'next/link'
+import { MainLayout } from '../components/layouts/MainLayout'
 
 /* Estructura de la exportacion de una ruta */
-export default function About() {
-    return (
-        <div className={styles.container}>
-            {/* Informacion principal de la cabecera */}
-            <Head>
-                <title>
-                    About - Pages
-                </title>
-                <meta name="description" content="About Page" />
-                <link rel="rel" href="/favicon.ico" />
-            </Head>
-            {/* Importacion del Navbar */}
-            <Navbar></Navbar>
-
-            {/*  */}
-            <main className={styles.main}>
-                <h1>About Page</h1>
-                <h1 className={styles.title}>
-                    Ir a <Link href="/">
-                        <a >Home!</a>
-                    </Link>
-                </h1>
-                <p className={styles.description}>
-                    Get started by editing{' '}
-                    <code className={styles.code}>pages/about.jsx</code>
-                </p>
-            </main>
-        </div>
-    );
+export default function Home() {
+  return (
+    <MainLayout>
+      <h1>About Page</h1>
+      <h1 className="title">
+        Ir a <Link href="/">
+          <a >Index!</a>
+        </Link>
+      </h1>
+      <p className="description">
+        Get started by editing{' '}
+        <code className="code">pages/about.jsx</code>
+      </p>
+    </MainLayout >
+  )
 }
