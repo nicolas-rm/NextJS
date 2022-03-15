@@ -1,4 +1,6 @@
-
-.menu-container a{
-    margin-right: 10px;
+/**
+* TODO: Asignacion del estilo a los hijos del contenedor.
+*/
+.menu-container a {
+  margin-right: 10px;
 }

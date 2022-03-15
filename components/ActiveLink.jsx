@@ -7,7 +7,9 @@ const style = {
 };
 
 export const ActiveLink = ({ href, text }) => {
-
+    /**
+     * TODO: Obtencion de la ruta y Nombre.
+     */
     const { asPath } = useRouter();
 
     return (

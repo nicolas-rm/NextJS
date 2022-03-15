@@ -3,9 +3,11 @@ import Link from 'next/link';
 import { Navbar } from '../../components/Navbar';
 import styles from '../../styles/Home.module.css';
 
+/* Estructura de la exportacion de una ruta */
 export default function Contact() {
     return (
         <div className={styles.container}>
+            {/* Informacion principal de la cabecera */}
             <Head>
                 <title>
                     Contact - Pages
@@ -13,6 +15,7 @@ export default function Contact() {
                 <meta name="description" content="Contact Page" />
                 <link rel="rel" href="/favicon.ico" />
             </Head>
+            {/* Importacion del Navbar */}
             <Navbar></Navbar>
             <main className={styles.main}>
 
